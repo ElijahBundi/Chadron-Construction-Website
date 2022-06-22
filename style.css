@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}   
+
+.nav{
+    width: 1200px;
+    margin: auto;
+    height: 75px;
+
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: orangered;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 20px;
+    padding-top: 10px;
+    float: left;
+}
+
+.toolbar{
+    width: 400px;
+    float: left;
+    height: 70px;
+
+}
+
+.menu{
+    padding: 20px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main li{
+    list-style: none;
+    margin-top: 5px;
+    margin-left: 60px;
+    font-size: 14px;
+}
+
+.main li a{
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+    transition: 0.4s ease-out;
+}
+
+.main li a:hover{
+    color: orange;
+}
+
+.search{
+    width: 300px;
+    margin-left: 280px;
+    float: left;
+}
+
+.srch{
+    width: 200px;
+    height: 35px;
+    background: rgba(0,0,0,0.2)50%;
+    border: 1px solid orangered;
+    margin-top: 14px;
+    color: white;
+    border-right: 0px;
+    font-size: 14px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 1.5px solid black;
+    margin-top: 11px;
+    color: black;
+    font-size: 16px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: white;
+    position: relative;
+}
+
+.content .pg{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.content h1{
+    font-size: 30px;
+    padding-left: 20px;
+    margin-top: 2%;
+    letter-spacing: 1.3px;
+}
+
+.content span{
+    color: #ff7200;
+    text-decoration: line-through;
+}
+
+.form{
+    width: 250px;
+    height: 400px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: 20px;
+    left: 885px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.form h3{
+    width: 220px;
+    font-family: sans-serif;
+    color: white;
+    font-size: 19px;
+    background-color: #ff7200;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input{
+    width: 240px;
+    height: 30px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+.submit{
+    width: 240px;
+    height: 40px;
+    background: white;
+    border: none;
+    margin-top: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.submit:hover{
+    background: orange;
+    color: white;
+}
+
+.submit a{
+    color: black;
+    font-weight: bold;
+    font-family: serif;
+}
