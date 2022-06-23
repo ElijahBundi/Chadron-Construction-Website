@@ -6,10 +6,12 @@
 
 .main{
     width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(3.jpg);
+    background: linear-gradient(to top, rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./Photos/3.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
+    max-height: 100%;
+    max-width: 100%;
 }   
 
 .nav{
@@ -176,11 +178,15 @@
     height: 380px;
     background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
     position: absolute;
-    top: 20px;
+    top: 10px;
     left: 885px;
     border-radius: 10px;
     padding: 20px;
 }
+
+img {
+    max-width: 5vw;
+  }
 
 .form h3{
     width: 220px;
@@ -213,6 +219,32 @@
     outline: none;
 }
 
+.drop-down{
+    width: 35px;
+    height: 20px;
+    position: relative;
+    left: 200px;
+    background: orange;
+    border: none;
+    margin-top: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.drop-down:hover{
+    background: white;
+    color: orange;
+}
+
+.drop-down a{
+    color: black;
+    font-weight: bold;
+    font-family: serif;
+    text-decoration: none;
+}
+
 .submit{
     width: 240px;
     height: 40px;
@@ -241,7 +273,7 @@
     height: 60px;
     position: absolute;
     top: 450px;
-    left: 1100px;
+    left:1100px;
     padding: 6px;
     background: #ff7200;    
     margin-top: 3px;    
@@ -330,7 +362,7 @@
     width: 90px;
     height: 30px;
     padding: 2px;
-    background: #ff7200;    
+    background: palegreen;    
     margin-top: 3px;    
     border-radius: 8px;
     border-width: 2px;
@@ -350,9 +382,49 @@
     padding: 10px;
 }
 
+.go-back{
+    width: 70px;
+    height: 30px;
+    padding: 2px;
+    background: palegoldenrod;    
+    margin-top: 3px;    
+    border-radius: 8px;
+    border-width: 2px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+}
 
+.go-back:hover{
+    background: beige;
+}
 
+.drop-down-menu{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-35%, -50%) scale(1);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 5px;
+    z-index: 10;
+    background-color: rgb(198, 213, 198);    
+    width: 2000px;
+    max-width: 60%;
+    text-align: justify;
+    cursor: pointer;
+}
 
+.drop-down-menu.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.drop-down-menu .list{
+    padding: 0px 5px;
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;    
+}
 
 
 

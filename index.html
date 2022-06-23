@@ -144,12 +144,21 @@
 
                    
                    <div class="form">
-                        
-                        <h3>Your Order</h3>
+                        <img
+                            id="poster"
+                            src="./Photos/1.jpg"
+                            alt="[YOUR ORDER]"
+                        />                        
                         <hr>
                         <input type="order" name="" placeholder="Enter order here">
-                        <button class="submit"> <a href="#">Add to Cart</a></button>
-                        
+                        <button class="drop-down"> <a href="#">&blacktriangledown; </a></button>
+                        <div class="drop-down-menu">
+                           <ul class="list">
+                                <!-- Material List goes here -->
+                                <li>All Materials</li>
+                            </ul>
+                        </div>
+
                         <p><br> <h3>Do you require Construction Services?</h3></p>
                         <hr>
                         <input type="text" name="" placeholder="yes / no: Type of service">
@@ -163,7 +172,7 @@
             <div class="popup-window">
                 <div class="popup-header">
                     <div class="title">Check Out Cart</div>
-                    <button class="close-cart">&times;</button>
+                    <!-- <button class="close-cart">&times;</button> -->
                 </div>
                 <div class="popup-body">
                     <p>Lorem ipsum dolor, sit amet consectetur 
@@ -186,7 +195,7 @@
                     </p>                    
                 </div>
                 <div class="button">
-                    <p></p>
+                    <button class="go-back">back</button>
                     <button class="proceed">Proceed</button>
                 </div>
             </div>
