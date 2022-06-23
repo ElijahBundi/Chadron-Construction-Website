@@ -12,6 +12,7 @@
     height: 100vh;
     max-height: 100%;
     max-width: 100%;
+    
 }   
 
 .nav{
@@ -179,13 +180,13 @@
     background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
     position: absolute;
     top: 10px;
-    left: 885px;
+    left: 890px;
     border-radius: 10px;
     padding: 20px;
 }
 
 img {
-    max-width: 5vw;
+    max-width: 9vw;
   }
 
 .form h3{
@@ -219,7 +220,7 @@ img {
     outline: none;
 }
 
-.drop-down{
+/* .drop-down{
     width: 35px;
     height: 20px;
     position: relative;
@@ -231,9 +232,14 @@ img {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.4s ease;
-}
+} */
 
 .drop-down:hover{
+    background: white;
+    color: orange;
+}
+
+.input:hover{
     background: white;
     color: orange;
 }
@@ -269,11 +275,11 @@ img {
 }
 
 .check-out{
-    width: 100px;
-    height: 60px;
+    width: 150px;
+    height: 50px;
     position: absolute;
     top: 450px;
-    left:1100px;
+    left:1030px;
     padding: 6px;
     background: #ff7200;    
     margin-top: 3px;    
@@ -290,7 +296,7 @@ img {
 .check-out a{
     color: black;
     font-weight: bold;
-    font-size: 19px;
+    font-size: 21px;
     font-family: serif;
 }
 
@@ -362,7 +368,7 @@ img {
     width: 90px;
     height: 30px;
     padding: 2px;
-    background: palegreen;    
+    background: orange;    
     margin-top: 3px;    
     border-radius: 8px;
     border-width: 2px;
@@ -372,7 +378,7 @@ img {
 }
 
 .proceed:hover{
-    background: green;
+    background: rgb(164, 141, 96);
 }
 
 .button{
@@ -401,9 +407,9 @@ img {
 
 .drop-down-menu{
     position: absolute;
-    top: 85%;
+    top: 79%;
     left: 50%;
-    transform: translate(-35%, -50%) scale(1);
+    transform: translate(-30%, -50%) scale(0);
     transition: 200ms ease-in-out;
     border: 1px solid black;
     border-radius: 5px;

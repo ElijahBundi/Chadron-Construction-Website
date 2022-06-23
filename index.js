@@ -47,30 +47,48 @@ function closePopupWindow(window) {
 // Drop-down menu functions
 // Definitions
 let list = document.querySelector('.list')
-let dropDownBtn = document.querySelector('.drop-down')
+let dropDown = document.querySelector('.drop-down')
+let dropDownMenu = document.querySelector('.drop-down-menu')
+let image = document.querySelector('img#poster')
+let trHeading = document.querySelector('.heading')
+let finalList = document.querySelector('.final-list')
 
 fetch('http://localhost:3000/materials')
 .then(res => res.json())
 .then(database => {
     for (let material of database) {
         let li = document.createElement('li')
+        let li2 = document.createElement('li')
         li.classList = 'add-button'
         li.id = material.id
         li.textContent = material.name
         list.appendChild(li)
+        li.addEventListener('click', (e) => {
+            image.src = material.image
+            li2.textContent = material.name
+            finalList.appendChild(li2)
+        })     
+         
     }
+    
 })
 
-list.style.display = 'none'
-// adding the listener
-dropDownBtn.addEventListener('click', (e) => {
-    if (list.style.display = 'none') {
-        list.style.display = 'block'
-    } else {
-        list.style.display = 'none'
-    }
+// open the popup window
+dropDown.addEventListener('click', (e) => {    
+    openPopupWindow(dropDownMenu)
+})
+overlay.addEventListener('click', (e) => {
+    closePopupWindow(dropDownMenu)
 })
 
+// let listLi = document.querySelectorAll('.list li')
+// console.log(listLi)
+
+// listLi.forEach(li => {
+//     li.addEventListener('click', (e) => {
+        
+//     })
+// })
 
 
 
