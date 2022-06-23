@@ -117,6 +117,40 @@
     position: relative;
 }
 
+.separator{
+    width: 500px;
+}
+
+.table{
+    width: 700px;
+    height: 330px;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+    position: absolute;
+    top: 180px;
+    left: 20px;
+    border-radius: 5px;
+    padding: 5px;    
+}
+
+.heading{
+    background: #ff7200;
+    color: black;
+    font-size: 16px;
+}
+
+.material{
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    background-color: orange;
+    font-size: 15px;
+}
+
+.disc{
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    background-color: orange;
+    font-size: 15px;
+    text-decoration: line-through;
+}
+
 .content .pg{
     padding-left: 20px;
     padding-bottom: 25px;
@@ -139,7 +173,7 @@
 
 .form{
     width: 250px;
-    height: 400px;
+    height: 380px;
     background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
     position: absolute;
     top: 20px;
@@ -153,7 +187,8 @@
     font-family: sans-serif;
     color: white;
     font-size: 19px;
-    background-color: #ff7200;
+    /* text-decoration: underline; */
+    /* background-color: #ff7200; */
     border-radius: 5px;
     margin: 2px;
     padding: 8px;
@@ -181,7 +216,7 @@
 .submit{
     width: 240px;
     height: 40px;
-    background: white;
+    background: orange;
     border: none;
     margin-top: 5px;
     font-size: 18px;
@@ -191,8 +226,8 @@
 }
 
 .submit:hover{
-    background: orange;
-    color: white;
+    background: white;
+    color: orange;
 }
 
 .submit a{
@@ -200,3 +235,145 @@
     font-weight: bold;
     font-family: serif;
 }
+
+.check-out{
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    top: 450px;
+    left: 1100px;
+    padding: 6px;
+    background: #ff7200;    
+    margin-top: 3px;    
+    border-radius: 8px;
+    border-width: 2px;
+    cursor: pointer;
+    transition: 0.4s ease;    
+}
+
+.check-out:hover{
+    background: white;
+}
+
+.check-out a{
+    color: black;
+    font-weight: bold;
+    font-size: 19px;
+    font-family: serif;
+}
+
+.popup-window{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 5px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+}
+
+.popup-window.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+    background-color: orange;
+}
+
+.popup-header .title{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.popup-header .close-cart{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.popup-body{
+    padding: 10px 15px;
+}
+
+.overlay{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    pointer-events: none;
+    transition: 200ms ease-in-out;
+}
+
+.overlay.active{
+    pointer-events: all;
+    opacity: 1;
+}
+
+.proceed{
+    width: 90px;
+    height: 30px;
+    padding: 2px;
+    background: #ff7200;    
+    margin-top: 3px;    
+    border-radius: 8px;
+    border-width: 2px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.proceed:hover{
+    background: green;
+}
+
+.button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

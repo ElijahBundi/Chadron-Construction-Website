@@ -2,12 +2,12 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial scale=1">
+        <!-- <meta name="viewport" content="width=device-width, initial scale=1"> -->
         <title>Chadron Construction</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="main">
+        <div class="main" id="main">
             <div class="nav">
                 <div class="icon">
                     <h2 class="logo">Chadron C.</h2>                    
@@ -32,151 +32,166 @@
                 <hr class="separator">
                 <p class="pg">Lorem ipsum dolor sit amet consectetur adipisicing <br>
                     elit. Nulla, nemo fuga eum laborum dolorem ducimus quam laudantium 
-                   <br> dolor qui illum commodi, tempore similique fugiat praesentium 
-                   <br> aperiam rerum nostrum natus magni!</p>
+                   <br></p>
                    
                    <div class="mat-list">
-                    <table border="5" cellpadding="7" cellspacing="0">
-                        <tr>
-                            <th></th>
-                            <th>Month</th>
-                            <th>Rent</th>
-                            <th colspan="2">Utilities</th>
-                            <th>Groceries</th>
-                            <th>Eating out</th>
-                            <th>Entertainment</th>
+                    <table class="table" border="3" cellpadding="10" cellspacing="0">
+                        <tr class="heading">                            
+                            <th>Material</th>                            
+                            <th colspan="2">Description</th>
+                            <th>Stock</th>
+                            <th>Actual Price</th>
+                            <th>Discount Price</th>                            
+                        </tr>
+                        <tr>                            
+                            <td class="material">Cement</td>
+                            <td>Bamburi type</td>
+                            <td>Rhino type</td>
+                            <td>1000 pcs</td>
+                            <td class="disc">ksh 750</td>
+                            <td>ksh 670</td>                            
+                        </tr>
+                        <tr>                            
+                            <td class="material">Machine-cut-Stones</td>
+                            <td>grey-black Ndarugo</td>
+                            <td>yellow Kajiado</td>
+                            <td>15000 pcs</td>
+                            <td class="disc">ksh 65</td>
+                            <td>ksh 55</td>                             
                         </tr>
                         <tr>
-                            <td><strong>Winter</strong></td>
-                            <td>July</td>
-                            <td>ksh 15,000</td>
-                            <td>ksh 3,000</td>
-                            <td>ksh 2,000</td>
-                            <td>ksh 3,500</td>
-                            <td>ksh 7,000</td>
-                            <td>ksh 5,000</td>
+                            <td class="material">Nails</td>
+                            <td>1",2",3",4" & 5"</td>
+                            <td>Timber screw nails</td>
+                            <td>1300 kgs</td>
+                            <td class="disc">ksh 210</td>
+                            <td>ksh 180</td>                             
+                        </tr>
+                        <tr>                            
+                            <td class="material">D16 Steel Bars</td>
+                            <td>Doshi type</td>
+                            <td>Tononoka type</td>
+                            <td>1800 pcs</td>
+                            <td class="disc">ksh 2700</td>
+                            <td>ksh 2450</td>                             
+                        </tr>
+                        <tr>                            
+                            <td class="material">D12 Steel Bars</td>
+                            <td>Doshi type</td>
+                            <td>Tononoka type</td>
+                            <td>2200 pcs</td>
+                            <td class="disc">ksh 1900</td>
+                            <td>ksh 1700</td>                           
                         </tr>
                         <tr>
-                            <td rowspan="2"><strong>Spring</strong></td>
-                            <td>August</td>
-                            <td>ksh 15,000</td>
-                            <td>ksh 1,500</td>
-                            <td>ksh 2,500</td>
-                            <td>ksh 5,500</td>
-                            <td>ksh 3,000</td>
-                            <td>ksh 8,000</td>
+                            <td class="material">D8 Steel Bars</td>
+                            <td>Doshi type</td>
+                            <td>Tononoka type</td>
+                            <td>3500 pcs</td>
+                            <td class="disc">ksh 900</td>
+                            <td>ksh 790</td>                             
+                        </tr>
+                        <tr>                            
+                            <td class="material">Block Boards</td>
+                            <td>Local</td>
+                            <td>Imported</td>
+                            <td>3000 pcs</td>
+                            <td class="disc">ksh 1400</td>
+                            <td>ksh 1250</td>                            
+                        </tr>
+                        <tr>                            
+                            <td class="material">300x300mm Tiles</td>
+                            <td>TwyFord Kenya</td>
+                            <td>Indian</td>
+                            <td>1000 boxes</td>
+                            <td class="disc">ksh 1300</td>
+                            <td>ksh 1100</td>                            
                         </tr>
                         <tr>
-                            <td>September</td>
-                            <td>ksh 15,000</td>
-                            <td>ksh 1,500</td>
-                            <td>ksh 2,500</td>
-                            <td>ksh 5,500</td>
-                            <td>ksh 3,000</td>
-                            <td>ksh 8,000</td>
+                            <td class="material">600x600mm Tiles</td>
+                            <td>TwyFord Kenya</td>
+                            <td>Indian</td>
+                            <td>600 boxes</td>
+                            <td class="disc">ksh 2200</td>
+                            <td>ksh 1850</td>                            
                         </tr>
-                    </table> -->
+                        <tr>                            
+                            <td class="material">CoverMatt Paint</td>
+                            <td>Crown Paint</td>
+                            <td>Duracoat Paint</td>
+                            <td>500, 20l buckets</td>
+                            <td class="disc">ksh 8000</td>
+                            <td>ksh 7200</td>                            
+                        </tr>
+                        <tr>                            
+                            <td class="material">Silk Vinyl Paint</td>
+                            <td>Crown Paint</td>
+                            <td>Duracoat Paint</td>
+                            <td>1200, 4l tins</td>
+                            <td class="disc">ksh 2500</td>
+                            <td>ksh 2350</td>                             
+                        </tr>
+                        <tr>
+                            <td class="material">Gypsum Boards</td>
+                            <td>Local</td>
+                            <td>Imported</td>
+                            <td>2500 pcs</td>
+                            <td class="disc">ksh 1700</td>
+                            <td>ksh 1400</td>                            
+                        </tr>
+                    </table> 
                    </div>
 
                    
                    <div class="form">
+                        
                         <h3>Your Order</h3>
+                        <hr>
                         <input type="order" name="" placeholder="Enter order here">
                         <button class="submit"> <a href="#">Add to Cart</a></button>
-
+                        
                         <p><br> <h3>Do you require Construction Services?</h3></p>
+                        <hr>
                         <input type="text" name="" placeholder="yes / no: Type of service">
                         <button class="submit"><a href="#">Submit</a> </button>
 
-
+                   </div>
+                   <div class="final">
+                    <button class="check-out"> <a href="#">Check Out</a> </button>
                    </div>
             </div>
+            <div class="popup-window">
+                <div class="popup-header">
+                    <div class="title">Check Out Cart</div>
+                    <button class="close-cart">&times;</button>
+                </div>
+                <div class="popup-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur 
+                        <br> adipisicing elit. Nisi in ea hic? Ut veniam 
+                        <br>reprehenderit dolor recusandae magnam sint quia quo 
+                        <br>doloremque ea velit amet necessitatibus fugiat, nulla 
+                        <br>consequuntur corrupti?
+                    </p>
+                    <p>Lorem ipsum dolor, sit amet consectetur 
+                        <br> adipisicing elit. Nisi in ea hic? Ut veniam 
+                        <br>reprehenderit dolor recusandae magnam sint quia quo 
+                        <br>doloremque ea velit amet necessitatibus fugiat, nulla 
+                        <br>consequuntur corrupti?
+                    </p>
+                    <p>Lorem ipsum dolor, sit amet consectetur 
+                        <br> adipisicing elit. Nisi in ea hic? Ut veniam 
+                        <br>reprehenderit dolor recusandae magnam sint quia quo 
+                        <br>doloremque ea velit amet necessitatibus fugiat, nulla 
+                        <br>consequuntur corrupti?
+                    </p>                    
+                </div>
+                <div class="button">
+                    <p></p>
+                    <button class="proceed">Proceed</button>
+                </div>
+            </div>
+            <div class="overlay"></div>
         </div>
-        <!-- <h1>Chadron Construction Limited</h1>
-        <hr>
-        <p><u><i>This my very first website</i></u></p>
-
-        <p>Lorem ipsum dolor sit amet, <a href="https://loremipsum.io/" target="_blank">consectetur adipiscing elit</a>, <br>
-            <em>sed do eiusmod tempor incididunt ut labore et dolore 
-            magna aliqua</em>. <br><strong><u>Ut enim ad minim veniam</u></strong>, quis nostrud 
-            exercitation ullamco <br>
-            laboris nisi ut aliquip ex ea 
-            commodo consequat. Duis aute irure dolor <br>
-            <hr>
-                <img src="https://www.allposters.com/-sp/Ruane-Manning-Fall-Splendor-Deer-Art-Poster-Print-Posters_i8849235_.html" alt="deer" border="3">
-            <hr>
-            in reprehenderit <br>
-            in voluptate velit esse cillum dolore eu fugiat nulla 
-            pariatur. Excepteur sint occaecat cupidatat non proident, 
-            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <ol>
-                <li><u><i>Groceries</i></u></li>
-                <ul>
-                    <li>Fruits</li>
-                    <ul>
-                        <li>Mangoes</li>
-                        <li>Oranges</li>
-                        <li>Pineapples</li>
-                    </ul>                        
-                    <li>Vegetables</li>
-                    <ul>
-                        <li>Managu</li>
-                        <li>Saga</li>
-                        <li>Kales</li>
-                    </ul>                        
-                    <li>Cereals</li>
-                    <ul>
-                        <li>Beans</li>
-                        <li>Maize</li>
-                        <li>Kamande</li>
-                    </ul>                        
-                    <li>Other</li>
-                    <ul>
-                        <li>Cooking Oil</li>
-                        <li>Tissue Paper</li>
-                        <li>Kitchen towel</li>
-                    </ul>                        
-                </ul>
-            </ol>
-            <table border="5" cellpadding="7" cellspacing="0">
-                <tr>
-                    <th></th>
-                    <th>Month</th>
-                    <th>Rent</th>
-                    <th colspan="2">Utilities</th>
-                    <th>Groceries</th>
-                    <th>Eating out</th>
-                    <th>Entertainment</th>
-                </tr>
-                <tr>
-                    <td><strong>Winter</strong></td>
-                    <td>July</td>
-                    <td>ksh 15,000</td>
-                    <td>ksh 3,000</td>
-                    <td>ksh 2,000</td>
-                    <td>ksh 3,500</td>
-                    <td>ksh 7,000</td>
-                    <td>ksh 5,000</td>
-                </tr>
-                <tr>
-                    <td rowspan="2"><strong>Spring</strong></td>
-                    <td>August</td>
-                    <td>ksh 15,000</td>
-                    <td>ksh 1,500</td>
-                    <td>ksh 2,500</td>
-                    <td>ksh 5,500</td>
-                    <td>ksh 3,000</td>
-                    <td>ksh 8,000</td>
-                </tr>
-                <tr>
-                    <td>September</td>
-                    <td>ksh 15,000</td>
-                    <td>ksh 1,500</td>
-                    <td>ksh 2,500</td>
-                    <td>ksh 5,500</td>
-                    <td>ksh 3,000</td>
-                    <td>ksh 8,000</td>
-                </tr>
-            </table> -->
+        <script src="index.js"></script>
     </body>
 </html>
