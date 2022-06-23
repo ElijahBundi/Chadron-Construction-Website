@@ -1,0 +1,124 @@
+{
+    "materials": [
+        {
+          "id": "1",
+          "name": "Cement",
+          "description_1": "Bamburi type",
+          "description_2": "Rhino type",
+          "stock": 1000,
+          "actual_price": 750,
+          "discount_price": 670,
+          "image": "./Photos/cement.jpg"
+        },
+        {
+          "id": "2",
+          "name": "Machine-cut Stones",
+          "description_1": "grey-black Ndarugo",
+          "description_2": "yellow Kajiado",
+          "stock": 15000,
+          "actual_price":  65,
+          "discount_price": 55,
+          "image": "./Photos/stones.jpeg"
+        }, 
+        {
+          "id": "3",
+          "name": "Nails",
+          "description_1": "1\",2\",3\",4\" & 5\"",
+          "description_2": "Timber screw nails",
+          "stock": 1300,
+          "actual_price": 210,
+          "discount_price": 180,
+          "image": "./Photos/nails.jpg"
+        },
+        {
+          "id": "4",
+          "name": "D16 Steel Bars",
+          "description_1": "Doshi type",
+          "description_2": "Tononoka type",
+          "stock": 1800,
+          "actual_price":  2700,
+          "discount_price": 2450,
+          "image": "./Photos/D16bars.jpg"
+        },
+        {
+          "id": "5",
+          "name": "D12 Steel Bars",
+          "description_1": "Doshi type",
+          "description_2": "Tononoka type",
+          "stock": 2200,
+          "actual_price":  1900,
+          "discount_price": 1700,
+          "image": "./Photos/D12bars.jpg"
+        },
+        {
+          "id": "6",
+          "name": "D8 Steel Bars",
+          "description_1": "Doshi type",
+          "description_2": "Tononoka type",
+          "stock": 3500,
+          "actual_price":  900,
+          "discount_price": 790,
+          "image": "./Photos/D8bars.jpeg"
+        },
+        {
+          "id": "7",
+          "name": "Block Boards",
+          "description_1": "Local",
+          "description_2": "Imported",
+          "stock": 3000,
+          "actual_price":  1400,
+          "discount_price": 1250,
+          "image": "./Photos/blockboards.jpg"
+        },
+        {
+          "id": "8",
+          "name": "300x300mm Tiles",
+          "description_1": "TwyFord Kenya",
+          "description_2": "Indian",
+          "stock": 1000,
+          "actual_price":  1300,
+          "discount_price": 1100,
+          "image": "./Photos/300x300tiles.jpg"
+        },   
+        {
+          "id": "9",
+          "name": "600x600mm Tiles",
+          "description_1": "TwyFord Kenya",
+          "description_2": "Indian",
+          "stock": 600,
+          "actual_price":  2200,
+          "discount_price": 1850,
+          "image": "./Photos/600x600tiles.jpg"
+        },  
+        {
+          "id": "10",
+          "name": "CoverMatt Paint",
+          "description_1": "Crown Paint",
+          "description_2": "Duracoat Paint",
+          "stock": 500,
+          "actual_price":  8000,
+          "discount_price": 7200,
+          "image": "./Photos/covermatt.jpg"
+        }, 
+        {
+          "id": "11",
+          "name": "Silk Vinyl Paint",
+          "description_1": "Crown Paint",
+          "description_2": "Duracoat Paint",
+          "stock": 1200,
+          "actual_price":  2500,
+          "discount_price": 2350,
+          "image": "./Photos/silkvinylpaint.jpg"
+        }, 
+        {
+          "id": "12",
+          "name": "Gypsum Boards",
+          "description_1": "Local",
+          "description_2": "Imported",
+          "stock": 2500,
+          "actual_price":  1700,
+          "discount_price": 1400,
+          "image": "./Photos/gypsum.jpg"
+        }                                  
+   ]
+}
