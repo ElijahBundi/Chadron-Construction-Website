@@ -58,17 +58,27 @@ fetch('http://localhost:3000/materials')
 .then(database => {
     for (let material of database) {
         let li = document.createElement('li')
-        let li2 = document.createElement('li')
+        // let li2 = document.createElement('li')
         li.classList = 'add-button'
         li.id = material.id
         li.textContent = material.name
         list.appendChild(li)
         li.addEventListener('click', (e) => {
             image.src = material.image
-            li2.textContent = material.name
-            finalList.appendChild(li2)
+            let li2 = material.name
+            createTable(li2, 100)
+            // li2.textContent = material.name
+            // finalList.appendChild(li2)
         })     
-         
+        function createTable(matName, qty) {
+            let tr = document.createElement('tr')
+            let td1 = document.createElement('td')
+            let td2 = document.createElement('td')
+            td1.innerText = matName
+            td2.innerText = `${qty} pcs`
+            finalList.appendChild(tr)
+            tr.appendChild(td1)
+        }
     }
     
 })
