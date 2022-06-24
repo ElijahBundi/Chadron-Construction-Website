@@ -44,6 +44,8 @@ function closePopupWindow(window) {
     } 
 }
 
+
+
 // Drop-down menu functions
 // Definitions
 let list = document.querySelector('.list')
@@ -52,6 +54,18 @@ let dropDownMenu = document.querySelector('.drop-down-menu')
 let image = document.querySelector('img#poster')
 let trHeading = document.querySelector('.heading')
 let finalList = document.querySelector('.final-list')
+
+// Creating a table for the gotten elements
+function createTable(matName, qty) {
+    let tr = document.createElement('tr')
+    let td1 = document.createElement('td')
+    let td2 = document.createElement('td')
+    td1.innerText = matName
+    td2.innerText = `${qty} pcs`
+    finalList.appendChild(tr)
+    tr.appendChild(td1)
+}
+
 
 fetch('http://localhost:3000/materials')
 .then(res => res.json())
@@ -70,15 +84,7 @@ fetch('http://localhost:3000/materials')
             // li2.textContent = material.name
             // finalList.appendChild(li2)
         })     
-        function createTable(matName, qty) {
-            let tr = document.createElement('tr')
-            let td1 = document.createElement('td')
-            let td2 = document.createElement('td')
-            td1.innerText = matName
-            td2.innerText = `${qty} pcs`
-            finalList.appendChild(tr)
-            tr.appendChild(td1)
-        }
+        
     }
     
 })
@@ -90,6 +96,87 @@ dropDown.addEventListener('click', (e) => {
 overlay.addEventListener('click', (e) => {
     closePopupWindow(dropDownMenu)
 })
+
+// let inputQuery = document.querySelector('.input')
+// .then(data => {
+//     for (let item of data) {
+//         inputQuery.addEventListener('submit', (e) => {
+//             e.preventDefault();
+//             let newQuery = 
+//         })
+//     }
+    
+// })
+
+
+let material = document.querySelector('.material').value
+let descr1 = document.querySelector('.descr1').value
+let descr2 = document.querySelector('.descr2').value
+let stock = document.querySelector('.stock').value
+let discPrice = document.querySelector('.disc-price').value
+let actPrice = document.querySelector('.act-price').value
+let imgUrl = document.querySelector('.img-url').src
+let addSubmit = document.querySelector('.add')
+
+function postData() {
+    fetch('http://localhost:3000/materials', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body:JSON.stringify({
+            name: material,
+            description_1: descr1,
+            description_2: descr2,
+            stock: stock,
+            actual_price: discPrice,
+            discount_price: actPrice,
+            image: imgUrl,
+        }) 
+    })
+    .then(res => res.json())
+    .then(data => {
+        console.log(data)
+    })    
+}
+
+addSubmit.addEventListener('submit', (e) => {
+    e.preventDefault()
+    postData()
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // let listLi = document.querySelectorAll('.list li')
 // console.log(listLi)
