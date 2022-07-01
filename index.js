@@ -53,38 +53,45 @@ let finalList = document.querySelector('.final-list')
 
 // Creating a table for the gotten elements
 
-let trHeader = document.createElement('tr')    
+let trHeader = document.createElement('tr') 
+let th = document.createElement('th')   
 let th1 = document.createElement('th')
 let th2 = document.createElement('th')
 let th3 = document.createElement('th')
 let th4 = document.createElement('th')
+th.innerText = ''
 th1.innerText = 'MATERIAL'
 th2.innerText = 'QTY'
 th3.innerText = 'COST'
 th4.innerText = 'TOTAL'
 
+trHeader.appendChild(th)
 trHeader.appendChild(th1)
 trHeader.appendChild(th2)
 trHeader.appendChild(th3)
 trHeader.appendChild(th4)
 
 finalList.appendChild(trHeader)
-console.log(finalList)
+
 
 // Table appending function
-function createTable(matName, qty, cost, total) {
+function createTable(i, matName, qty, cost, total) {
 
     let tr = document.createElement('tr')
+    let td = document.createElement('td')
     let td1 = document.createElement('td')
     let td2 = document.createElement('td')
     let td3 = document.createElement('td')
     let td4 = document.createElement('td')
     td4.className = 'bold'
+
+    td.innerText = i
     td1.innerText = matName
     td2.innerText = `${qty} pcs`
     td3.innerText = `Ksh ${cost}`
     td4.innerText = `Ksh ${total}`
-
+    
+    tr.appendChild(td)
     tr.appendChild(td1)
     tr.appendChild(td2)
     tr.appendChild(td3)
@@ -100,20 +107,23 @@ fetch('http://localhost:3000/materials')
 .then(database => {
     for (let material of database) {
         let li = document.createElement('li')
-        // let li2 = document.createElement('li')
-        li.classList = 'add-button'
-        li.id = material.id
-        li.textContent = material.name
+        let input = document.createElement('input')  
+        input.classList = 'order-input'
+        input.type = 'number'  
+        input.placeholder = 'Enter qty:'    
+        li.classList = 'add-button'        
+        li.textContent = material.name        
         list.appendChild(li)
         li.addEventListener('click', (e) => {
+            li.appendChild(input)
+            input.addEventListener('input', () => input.value)
+            let i = 1
             image.src = material.image
             let li2 = material.name
-            let qty = 100
+            let qty = input.value
             let cost = material.discount_price
             let total = qty * cost
-            createTable(li2, qty, cost, total)
-            // li2.textContent = material.name
-            // finalList.appendChild(li2)
+            createTable(i, li2, qty, cost, total)
         })     
         
     }

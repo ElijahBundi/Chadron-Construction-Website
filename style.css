@@ -310,7 +310,7 @@ img {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(0);
     transition: 200ms ease-in-out;
     border: 1px solid black;
     border-radius: 5px;
@@ -414,17 +414,22 @@ img {
 .drop-down-menu{
     position: absolute;
     top: 79%;
-    left: 50%;
-    transform: translate(-30%, -50%) scale(0);
+    left: 20%;
+    transform: translate(-30%, -50%) scale(1);
     transition: 200ms ease-in-out;
     border: 1px solid black;
     border-radius: 5px;
     z-index: 10;
     background-color: rgb(198, 213, 198);    
-    width: 2000px;
+    width: 250px;
     max-width: 60%;
     text-align: justify;
     cursor: pointer;
+}
+
+.form input.order-input{
+    color: black;
+    width: 100px;
 }
 
 .drop-down-menu.active{
