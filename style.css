@@ -414,7 +414,7 @@ img {
 .drop-down-menu{
     position: absolute;
     top: 62%;
-    left: 65%;
+    left: 64%;
     transform: translate(-30%, -50%) scale(0);
     transition: 200ms ease-in-out;
     border: 1px solid black;
